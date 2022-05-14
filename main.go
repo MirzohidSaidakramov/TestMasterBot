@@ -3,13 +3,13 @@ package main
 import (
 	"flag"
 	"log"
+	"testMaster/clients/telegram"
 )
 
 func main() {
 	// token = flags.Get(token)
-	t := mustToken()
 
-	// tgClient = telegram.New(token)
+	tgClient = telegram.New("api.telegram.org", mustToken())
 
 	// fetcher = fetcher.New()
 
